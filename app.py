@@ -46,17 +46,18 @@ def submit():
     rating = int(request.form["rating"])
     text = request.form["text"]
     product_id = request.form["product_id"]
+    lang = request.args.get("lang", "en")  # fallback if not present
     sentiment = get_sentiment(text)
     points = 5
-    lang = request.args.get("lang", "en")
 
     conn = sqlite3.connect("database.db")
     conn.execute("INSERT INTO feedback (name, product_id, rating, text, sentiment, points) VALUES (?, ?, ?, ?, ?, ?)",
                  (name, product_id, rating, text, sentiment, points))
     conn.commit()
     conn.close()
-    
-    return redirect(url_for("feedback", product_id=product_id, lang=lang))
+
+    return redirect(f"/feedback?product_id={product_id}&lang={lang}")
+
 
 @app.route("/dashboard")
 def dashboard():
