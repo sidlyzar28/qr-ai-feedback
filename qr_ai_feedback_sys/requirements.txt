@@ -1,0 +1,5 @@
+Flask
+qrcode
+textblob
+opencv-python
+pillow
