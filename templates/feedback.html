@@ -38,14 +38,13 @@
   </style>
 </head>
 <body>
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid px-4">
-      <a class="navbar-brand" href="/">{{ _('QR-AI Feedback') }}</a>
+      <a class="navbar-brand" href="/?lang={{ get_locale() }}">{{ _('QR-AI Feedback') }}</a>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/dashboard">{{ _('Dashboard') }}</a>
+            <a class="nav-link" href="/dashboard?lang={{ get_locale() }}">{{ _('Dashboard') }}</a>
           </li>
         </ul>
       </div>
@@ -55,16 +54,15 @@
   <!-- Language Selection -->
   <div class="text-center language-links">
     <p>{{ _('Select Language:') }}</p>
-    <a href="?lang=en">English</a> |
-    <a href="?lang=hi">हिन्दी</a> |
-    <a href="?lang=bn">বাংলা</a>
+    <a href="?lang=en&product_id={{ product_id }}">English</a> |
+    <a href="?lang=hi&product_id={{ product_id }}">हिन्दी</a> |
+    <a href="?lang=bn&product_id={{ product_id }}">বাংলা</a>
   </div>
 
-  <!-- Form -->
   <div class="container d-flex align-items-center justify-content-center" style="min-height: 75vh;">
     <div class="col-md-6 card">
       <h2 class="text-center mb-4">{{ _('Submit Your Feedback') }}</h2>
-      <form action="/submit" method="POST">
+      <form action="/submit?lang={{ get_locale() }}" method="POST">
         <input type="hidden" name="product_id" value="{{ product_id }}">
         
         <div class="mb-3">
@@ -89,7 +87,6 @@
     </div>
   </div>
 
-  <!-- Footer -->
   <footer>
     {{ _('Made with ❤️ by Siddharth | Empowering Small Businesses to Achieve Their Goals') }}
   </footer>

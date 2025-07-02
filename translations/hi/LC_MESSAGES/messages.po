@@ -1,16 +1,16 @@
-# Hindi translations for PROJECT_TEST_TEST
+# Hindi translations for PROJECT_TEST_TEST_TEST
 # Copyright (C) 2025 Siddharth
-# This file is distributed under the same license as the PROJECT_TEST_TEST
+# This file is distributed under the same license as the
+# PROJECT_TEST_TEST_TEST
 # project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
-
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT_TEST 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-03 00:36+0530\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2025-07-03 01:06+0530\n"
+"PO-Revision-Date: 2025-07-03 01:15+0530\n" # Updated to current time
+"Last-Translator: Siddharth <your_email@example.com>\n" # Update your name and email
 "Language: hi\n"
 "Language-Team: hi <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: app.py:30
+#: app.py:40
 msgid "QR-AI Feedback System"
 msgstr "क्यूआर-एआई फीडबैक सिस्टम"
 
-#: app.py:51
+#: app.py:61
 msgid "Thanks for your feedback!"
 msgstr "आपकी प्रतिक्रिया के लिए धन्यवाद!"
 
@@ -71,221 +71,222 @@ msgstr ""
 "❤️ से सिद्धार्थ द्वारा निर्मित | छोटे व्यवसायों को उनके लक्ष्य प्राप्त "
 "करने में सहायता"
 
+# --- Click Library Messages (Translated to Hindi) ---
 #: venv/Lib/site-packages/click/_termui_impl.py:600
 #, python-brace-format
 msgid "{editor}: Editing failed"
-msgstr ""
+msgstr "{editor}: संपादन विफल रहा"
 
 #: venv/Lib/site-packages/click/_termui_impl.py:604
 #, python-brace-format
 msgid "{editor}: Editing failed: {e}"
-msgstr ""
+msgstr "{editor}: संपादन विफल रहा: {e}"
 
 #: venv/Lib/site-packages/click/core.py:1084
 #: venv/Lib/site-packages/click/core.py:1121
 #, python-brace-format
 msgid "{text} {deprecated_message}"
-msgstr ""
+msgstr "{text} {deprecated_message}"
 
 #: venv/Lib/site-packages/click/core.py:1140
 msgid "Options"
-msgstr ""
+msgstr "विकल्प"
 
 #: venv/Lib/site-packages/click/core.py:1202
 #, python-brace-format
 msgid "Got unexpected extra argument ({args})"
 msgid_plural "Got unexpected extra arguments ({args})"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "अनापेक्षित अतिरिक्त तर्क ({args}) प्राप्त हुआ"
+msgstr[1] "अनापेक्षित अतिरिक्त तर्क ({args}) प्राप्त हुए"
 
 #: venv/Lib/site-packages/click/core.py:1221
 #, python-brace-format
 msgid "DeprecationWarning: The command {name!r} is deprecated.{extra_message}"
-msgstr ""
+msgstr "बहिष्कार चेतावनी: कमांड {name!r} बहिष्कृत है।{extra_message}"
 
 #: venv/Lib/site-packages/click/core.py:1405
 msgid "Aborted!"
-msgstr ""
+msgstr "अवरुद्ध!"
 
 #: venv/Lib/site-packages/click/core.py:1779
 msgid "Commands"
-msgstr ""
+msgstr "कमांड"
 
 #: venv/Lib/site-packages/click/core.py:1810
 msgid "Missing command."
-msgstr ""
+msgstr "कमांड गायब है।"
 
 #: venv/Lib/site-packages/click/core.py:1888
 #, python-brace-format
 msgid "No such command {name!r}."
-msgstr ""
+msgstr "{name!r} जैसी कोई कमांड नहीं है।"
 
 #: venv/Lib/site-packages/click/core.py:2303
 msgid "Value must be an iterable."
-msgstr ""
+msgstr "मान एक पुनरावर्तनीय होना चाहिए।"
 
 #: venv/Lib/site-packages/click/core.py:2324
 #, python-brace-format
 msgid "Takes {nargs} values but 1 was given."
 msgid_plural "Takes {nargs} values but {len} were given."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{nargs} मान लेता है लेकिन 1 दिया गया था।"
+msgstr[1] "{nargs} मान लेता है लेकिन {len} दिए गए थे।"
 
 #: venv/Lib/site-packages/click/core.py:2404
 #, python-brace-format
 msgid ""
 "DeprecationWarning: The {param_type} {name!r} is "
 "deprecated.{extra_message}"
-msgstr ""
+msgstr "बहिष्कार चेतावनी: {param_type} {name!r} बहिष्कृत है।{extra_message}"
 
 #: venv/Lib/site-packages/click/core.py:2807
 #, python-brace-format
 msgid "env var: {var}"
-msgstr ""
+msgstr "पर्यावरण चर: {var}"
 
 #: venv/Lib/site-packages/click/core.py:2810
 #, python-brace-format
 msgid "default: {default}"
-msgstr ""
+msgstr "डिफ़ॉल्ट: {default}"
 
 #: venv/Lib/site-packages/click/core.py:2814
 msgid "required"
-msgstr ""
+msgstr "आवश्यक"
 
 #: venv/Lib/site-packages/click/core.py:2870
 msgid "(dynamic)"
-msgstr ""
+msgstr "(गतिशील)"
 
 #: venv/Lib/site-packages/click/decorators.py:465
 #, python-format
 msgid "%(prog)s, version %(version)s"
-msgstr ""
+msgstr "%(prog)s, संस्करण %(version)s"
 
 #: venv/Lib/site-packages/click/decorators.py:522
 msgid "Show the version and exit."
-msgstr ""
+msgstr "संस्करण दिखाएं और बाहर निकलें।"
 
 #: venv/Lib/site-packages/click/decorators.py:548
 msgid "Show this message and exit."
-msgstr ""
+msgstr "यह संदेश दिखाएं और बाहर निकलें।"
 
 #: venv/Lib/site-packages/click/exceptions.py:50
 #: venv/Lib/site-packages/click/exceptions.py:89
 #, python-brace-format
 msgid "Error: {message}"
-msgstr ""
+msgstr "त्रुटि: {message}"
 
 #: venv/Lib/site-packages/click/exceptions.py:81
 #, python-brace-format
 msgid "Try '{command} {option}' for help."
-msgstr ""
+msgstr "सहायता के लिए '{command} {option}' का प्रयास करें।"
 
 #: venv/Lib/site-packages/click/exceptions.py:130
 #, python-brace-format
 msgid "Invalid value: {message}"
-msgstr ""
+msgstr "अमान्य मान: {message}"
 
 #: venv/Lib/site-packages/click/exceptions.py:132
 #, python-brace-format
 msgid "Invalid value for {param_hint}: {message}"
-msgstr ""
+msgstr "{param_hint} के लिए अमान्य मान: {message}"
 
 #: venv/Lib/site-packages/click/exceptions.py:190
 msgid "Missing argument"
-msgstr ""
+msgstr "तर्क अनुपस्थित"
 
 #: venv/Lib/site-packages/click/exceptions.py:192
 msgid "Missing option"
-msgstr ""
+msgstr "विकल्प अनुपस्थित"
 
 #: venv/Lib/site-packages/click/exceptions.py:194
 msgid "Missing parameter"
-msgstr ""
+msgstr "पैरामीटर अनुपस्थित"
 
 #: venv/Lib/site-packages/click/exceptions.py:196
 #, python-brace-format
 msgid "Missing {param_type}"
-msgstr ""
+msgstr "{param_type} अनुपस्थित"
 
 #: venv/Lib/site-packages/click/exceptions.py:203
 #, python-brace-format
 msgid "Missing parameter: {param_name}"
-msgstr ""
+msgstr "पैरामीटर अनुपस्थित: {param_name}"
 
 #: venv/Lib/site-packages/click/exceptions.py:223
 #, python-brace-format
 msgid "No such option: {name}"
-msgstr ""
+msgstr "{name} जैसा कोई विकल्प नहीं है।"
 
 #: venv/Lib/site-packages/click/exceptions.py:235
 #, python-brace-format
 msgid "Did you mean {possibility}?"
 msgid_plural "(Possible options: {possibilities})"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "क्या आपका मतलब {possibility} था?"
+msgstr[1] "(संभावित विकल्प: {possibilities})"
 
 #: venv/Lib/site-packages/click/exceptions.py:282
 msgid "unknown error"
-msgstr ""
+msgstr "अज्ञात त्रुटि"
 
 #: venv/Lib/site-packages/click/exceptions.py:289
 #, python-brace-format
 msgid "Could not open file {filename!r}: {message}"
-msgstr ""
+msgstr "फ़ाइल {filename!r} नहीं खोल सका: {message}"
 
 #: venv/Lib/site-packages/click/formatting.py:156
 msgid "Usage:"
-msgstr ""
+msgstr "उपयोग:"
 
 #: venv/Lib/site-packages/click/parser.py:200
 #, python-brace-format
 msgid "Argument {name!r} takes {nargs} values."
-msgstr ""
+msgstr "तर्क {name!r} {nargs} मान लेता है।"
 
 #: venv/Lib/site-packages/click/parser.py:383
 #, python-brace-format
 msgid "Option {name!r} does not take a value."
-msgstr ""
+msgstr "विकल्प {name!r} कोई मान नहीं लेता है।"
 
 #: venv/Lib/site-packages/click/parser.py:444
 #, python-brace-format
 msgid "Option {name!r} requires an argument."
 msgid_plural "Option {name!r} requires {nargs} arguments."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "विकल्प {name!r} के लिए एक तर्क आवश्यक है।"
+msgstr[1] "विकल्प {name!r} के लिए {nargs} तर्क आवश्यक हैं।"
 
 #: venv/Lib/site-packages/click/shell_completion.py:326
 msgid "Shell completion is not supported for Bash versions older than 4.4."
-msgstr ""
+msgstr "शेल पूर्णता बैश के 4.4 से पुराने संस्करणों के लिए समर्थित नहीं है।"
 
 #: venv/Lib/site-packages/click/shell_completion.py:333
 msgid "Couldn't detect Bash version, shell completion is not supported."
-msgstr ""
+msgstr "बैश संस्करण का पता नहीं चल सका, शेल पूर्णता समर्थित नहीं है।"
 
 #: venv/Lib/site-packages/click/termui.py:162
 msgid "Repeat for confirmation"
-msgstr ""
+msgstr "पुष्टि के लिए दोहराएँ"
 
 #: venv/Lib/site-packages/click/termui.py:178
 msgid "Error: The value you entered was invalid."
-msgstr ""
+msgstr "त्रुटि: आपके द्वारा दर्ज किया गया मान अमान्य था।"
 
 #: venv/Lib/site-packages/click/termui.py:180
 #, python-brace-format
 msgid "Error: {e.message}"
-msgstr ""
+msgstr "त्रुटि: {e.message}"
 
 #: venv/Lib/site-packages/click/termui.py:191
 msgid "Error: The two entered values do not match."
-msgstr ""
+msgstr "त्रुटि: दर्ज किए गए दो मान मेल नहीं खाते।"
 
 #: venv/Lib/site-packages/click/termui.py:247
 msgid "Error: invalid input"
-msgstr ""
+msgstr "त्रुटि: अमान्य इनपुट"
 
 #: venv/Lib/site-packages/click/termui.py:866
 msgid "Press any key to continue..."
-msgstr ""
+msgstr "जारी रखने के लिए कोई भी कुंजी दबाएं..."
 
 #: venv/Lib/site-packages/click/types.py:332
 #, python-brace-format
@@ -293,87 +294,88 @@ msgid ""
 "Choose from:\n"
 "\t{choices}"
 msgstr ""
+"इनमें से चुनें:\n"
+"\t{choices}"
 
 #: venv/Lib/site-packages/click/types.py:369
 #, python-brace-format
 msgid "{value!r} is not {choice}."
 msgid_plural "{value!r} is not one of {choices}."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{value!r} {choice} नहीं है।"
+msgstr[1] "{value!r} {choices} में से एक नहीं है।"
 
 #: venv/Lib/site-packages/click/types.py:460
 #, python-brace-format
 msgid "{value!r} does not match the format {format}."
 msgid_plural "{value!r} does not match the formats {formats}."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{value!r} प्रारूप {format} से मेल नहीं खाता।"
+msgstr[1] "{value!r} प्रारूप {formats} से मेल नहीं खाता।"
 
 #: venv/Lib/site-packages/click/types.py:482
 #, python-brace-format
 msgid "{value!r} is not a valid {number_type}."
-msgstr ""
+msgstr "{value!r} एक वैध {number_type} नहीं है।"
 
 #: venv/Lib/site-packages/click/types.py:538
 #, python-brace-format
 msgid "{value} is not in the range {range}."
-msgstr ""
+msgstr "{value} सीमा {range} में नहीं है।"
 
 #: venv/Lib/site-packages/click/types.py:679
 #, python-brace-format
 msgid "{value!r} is not a valid boolean."
-msgstr ""
+msgstr "{value!r} एक वैध बूलियन नहीं है।"
 
 #: venv/Lib/site-packages/click/types.py:703
 #, python-brace-format
 msgid "{value!r} is not a valid UUID."
-msgstr ""
+msgstr "{value!r} एक वैध UUID नहीं है।"
 
 #: venv/Lib/site-packages/click/types.py:893
 msgid "file"
-msgstr ""
+msgstr "फ़ाइल"
 
 #: venv/Lib/site-packages/click/types.py:895
 msgid "directory"
-msgstr ""
+msgstr "डायरेक्टरी"
 
 #: venv/Lib/site-packages/click/types.py:897
 msgid "path"
-msgstr ""
+msgstr "पथ"
 
 #: venv/Lib/site-packages/click/types.py:944
 #, python-brace-format
 msgid "{name} {filename!r} does not exist."
-msgstr ""
+msgstr "{name} {filename!r} मौजूद नहीं है।"
 
 #: venv/Lib/site-packages/click/types.py:953
 #, python-brace-format
 msgid "{name} {filename!r} is a file."
-msgstr ""
+msgstr "{name} {filename!r} एक फ़ाइल है।"
 
 #: venv/Lib/site-packages/click/types.py:961
 #, python-brace-format
 msgid "{name} {filename!r} is a directory."
-msgstr ""
+msgstr "{name} {filename!r} एक डायरेक्टरी है।"
 
 #: venv/Lib/site-packages/click/types.py:970
 #, python-brace-format
 msgid "{name} {filename!r} is not readable."
-msgstr ""
+msgstr "{name} {filename!r} पठनीय नहीं है।"
 
 #: venv/Lib/site-packages/click/types.py:979
 #, python-brace-format
 msgid "{name} {filename!r} is not writable."
-msgstr ""
+msgstr "{name} {filename!r} लिखने योग्य नहीं है।"
 
 #: venv/Lib/site-packages/click/types.py:988
 #, python-brace-format
 msgid "{name} {filename!r} is not executable."
-msgstr ""
+msgstr "{name} {filename!r} निष्पादन योग्य नहीं है।"
 
 #: venv/Lib/site-packages/click/types.py:1055
 #, python-brace-format
 msgid "{len_type} values are required, but {len_value} was given."
 msgid_plural "{len_type} values are required, but {len_value} were given."
-msgstr[0] ""
-msgstr[1] ""
-
+msgstr[0] "{len_type} मान आवश्यक हैं, लेकिन {len_value} दिया गया था।"
+msgstr[1] "{len_type} मान आवश्यक हैं, लेकिन {len_value} दिए गए थे।"

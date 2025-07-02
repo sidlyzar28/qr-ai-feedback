@@ -1,5 +1,5 @@
-from flask import Flask, render_template, request, redirect
-from flask_babel import Babel, _
+from flask import Flask, render_template, request, redirect, url_for
+from flask_babel import Babel, _, get_locale as babel_get_locale
 import sqlite3
 from sentiment import get_sentiment
 
@@ -9,8 +9,7 @@ app.config['BABEL_TRANSLATION_DIRECTORIES'] = 'translations'
 
 babel = Babel(app)
 
-from flask_babel import get_locale as babel_get_locale
-
+# Language selector
 def get_locale():
     return request.args.get('lang') or 'en'
 
@@ -18,8 +17,7 @@ babel.locale_selector_func = get_locale
 
 @app.context_processor
 def inject_globals():
-    return dict(_=_, get_locale=get_locale)
-
+    return dict(_=_, get_locale=babel_get_locale)
 
 def init_db():
     conn = sqlite3.connect("database.db")
@@ -50,13 +48,15 @@ def submit():
     product_id = request.form["product_id"]
     sentiment = get_sentiment(text)
     points = 5
+    lang = request.args.get("lang", "en")
 
     conn = sqlite3.connect("database.db")
     conn.execute("INSERT INTO feedback (name, product_id, rating, text, sentiment, points) VALUES (?, ?, ?, ?, ?, ?)",
                  (name, product_id, rating, text, sentiment, points))
     conn.commit()
     conn.close()
-    return _("Thanks for your feedback!")
+    
+    return redirect(url_for("feedback", product_id=product_id, lang=lang))
 
 @app.route("/dashboard")
 def dashboard():
